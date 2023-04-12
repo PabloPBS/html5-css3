@@ -27,6 +27,9 @@
             font-size: 1.1em;
             padding: 15px;
         }
+        #num {
+            text-align: right;
+        }
         thead > td, th {
             background-color: lightgray;
         }
@@ -40,14 +43,14 @@
         </caption>
         <thead>
             <tr>
-                <th scope="row">Grupo</th>
-                <th scope="row">Nomes</th>
-                <th scope="rowgroup" colspan="3">Filmes</td>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th scope="colgroup" rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -66,7 +69,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th scope="colgroup" rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno Medonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -85,6 +88,12 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</td>
+                <td id="num">1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
